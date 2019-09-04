@@ -1,8 +1,8 @@
 # Week 7 Day 3 - Immutable Data Patterns and Custom Hooks
 
-Today's lecture recording is available here: 
+[Today's lecture recording is available on YouTube.](https://www.youtube.com/watch?v=wFYMjnnbVoo)
 
-[Today's notes are available on Github.]() The notes we wrote in class are in the `notes.md` file.
+[Today's notes are available on Github.](https://github.com/NimaBoscarino/custom-hooks-notes) The notes we wrote in class are in the `notes.md` file.
 
 Today's example demos were:
 
