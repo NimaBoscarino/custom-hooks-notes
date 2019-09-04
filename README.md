@@ -1,68 +1,74 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Week 7 Day 3 - Immutable Data Patterns and Custom Hooks
 
-## Available Scripts
+Today's lecture recording is available here: 
 
-In the project directory, you can run:
+[Today's notes are available on Github.]() The notes we wrote in class are in the `notes.md` file.
 
-### `npm start`
+Today's example demos were:
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- [Kanye album list with useState](https://codesandbox.io/s/spring-field-tp4hx)
+- [useVoice](https://codesandbox.io/s/hopeful-ramanujan-91vd1)
+- [making our own useMousePosition hook](https://codesandbox.io/s/damp-cookies-w4pm0)
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+Useful links:
 
-### `npm test`
+- [react-use](https://github.com/streamich/react-use)
+- [useHooks](https://usehooks.com)
+- [general hooks reference](https://reactjs.org/docs/hooks-reference.html)
+- [React for VR](https://facebook.github.io/react-360/)
+- [making your own useKeyPress hook](https://usehooks.com/useKeyPress/)
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This lecture was in two parts!
 
-### `npm run build`
+## The Plan for Today
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Part 1: Immutable Data Patterns
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+- What does immutability mean?
+- Why do we care?
+    - Let's see an example where mutability goes wrong
+    - Testing immutable functions
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Part 2: Custom Hooks
 
-### `npm run eject`
+- What are hooks? Review!
+- A brief tour of built-in hooks
+- Hooks safari! Take a look online for some community hooks
+- Let's make our own
+    - useMousePosition
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Actual Notes
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Immutable Data Patterns
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+> From Wikipedia
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+"In computing, a persistent data structure is a data structure that always preserves the previous version of itself when it is modified. Such data structures are effectively immutable, as their operations do not (visibly) update the structure in-place, but instead always yield a new updated structure."
 
-## Learn More
+In other words...
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Don’t mutate data, and if you have to – create a clone and mutate it.
+- Reuse unchanged parts. Only changed parts should be changed.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+#### Benefits of immutability
 
-### Code Splitting
+- Immutable data structure are simpler to construct, test, and use
+- Truly immutable values are always thread-safe
+- Immutable data is side-effect free (avoids unexpected bugs hard to detect)
+- You can quicky compare the previous and the new version
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+### Custom Hooks
 
-### Analyzing the Bundle Size
+Sometimes we just want to use some code logic without tying it to a particular UI
+Custom Hooks allow us to do that.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+[NOTE, from the React docs](https://reactjs.org/docs/hooks-custom.html): *Custom Hooks are a convention that naturally follows from the design of Hooks, rather than a React feature.*
 
-### Making a Progressive Web App
+*Do two components using the same Hook share state? No. Custom Hooks are a mechanism to reuse stateful logic (such as setting up a subscription and remembering the current value), but every time you use a custom Hook, all state and effects inside of it are fully isolated.*
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+Some guidelines:
 
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+- Only call Hooks from the top-level of a function component or a custom Hook.
+- Cannot be called in React class components, loops, if statement, regular function, in event handlers
+- A custom Hook must start with the keyword "use"
+- a custom Hook can call other custom or built-in Hooks.
