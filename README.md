@@ -1,10 +1,18 @@
 # Week 7 Day 3 - Immutable Data Patterns and Custom Hooks
 
-[Today's lecture recording is available on YouTube.](https://www.youtube.com/watch?v=wFYMjnnbVoo)
+[Lecture recording](https://www.youtube.com/watch?v=3fOrifriEwE)
 
-[Today's notes are available on Github.](https://github.com/NimaBoscarino/custom-hooks-notes) The notes we wrote in class are in the `notes.md` file.
+[Here's another lecture recording.](https://www.youtube.com/watch?v=wFYMjnnbVoo)
 
-Today's example demos were:
+[Today's notes are available on Github.](https://github.com/NimaBoscarino/custom-hooks-notes) The notes we wrote in class are in the `new_notes.md` file.
+
+These are the demos that we made today:"
+
+- [Albums](https://codesandbox.io/s/zen-leaf-gmx33?fontsize=14)
+- [Custom hooks with useMousePosition](https://codesandbox.io/s/eloquent-allen-dxfns?fontsize=14)
+- [controlled inputs, after lecture](https://codesandbox.io/s/naughty-voice-ctdqs?fontsize=14)
+
+Some more example demos here:
 
 - [Kanye album list with useState](https://codesandbox.io/s/spring-field-tp4hx)
 - [useVoice](https://codesandbox.io/s/hopeful-ramanujan-91vd1)
