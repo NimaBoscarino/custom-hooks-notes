@@ -1,18 +1,29 @@
 # Week 7 Day 3 - Immutable Data Patterns and Custom Hooks
 
-[Lecture recording](https://www.youtube.com/watch?v=3fOrifriEwE)
+[Lecture recording](https://youtu.be/2GJGn_Uirr8)
 
-[Here's another lecture recording.](https://www.youtube.com/watch?v=wFYMjnnbVoo)
+[Another lecture recording](https://www.youtube.com/watch?v=3fOrifriEwE)
 
-[Today's notes are available on Github.](https://github.com/NimaBoscarino/custom-hooks-notes) The notes we wrote in class are in the `new_notes.md` file.
+[Here's yet another lecture recording.](https://www.youtube.com/watch?v=wFYMjnnbVoo)
 
-These are the demos that we made today:"
+[Today's notes are available on Github.](https://github.com/NimaBoscarino/custom-hooks-notes) The notes we wrote in class are in the `oct-30.md` file.
+
+Our actual code can be found in the files:
+
+- disgusting.md
+- breathtaking.md
+- arrays.md
+- objects.md
+- App.js
+- App copy.js
+
+These are some more demos:
 
 - [Albums](https://codesandbox.io/s/zen-leaf-gmx33?fontsize=14)
 - [Custom hooks with useMousePosition](https://codesandbox.io/s/eloquent-allen-dxfns?fontsize=14)
 - [controlled inputs, after lecture](https://codesandbox.io/s/naughty-voice-ctdqs?fontsize=14)
 
-Some more example demos here:
+And even more example demos here:
 
 - [Kanye album list with useState](https://codesandbox.io/s/spring-field-tp4hx)
 - [useVoice](https://codesandbox.io/s/hopeful-ramanujan-91vd1)
