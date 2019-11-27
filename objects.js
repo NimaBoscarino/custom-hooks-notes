@@ -1,18 +1,22 @@
 const obj = {
     a: 1,
     b: 2,
-    c: 3,
-    d: 'Kanye'
+    c: {
+        d: 3,
+        e: 4
+    }
 }
 
-const addProperty = (object, property, value) => {
-    // how to clone an object???
-    const newObject = {...object}
-    
-    newObject[property] = value
-    return newObject
+const changeBTo5 = (object) => {
+    let newObject = { ...object }
+    newObject.b = 5
+
+    return object
 }
 
-const newObj = addProperty(obj, 'e', 'Graduation')
-console.log(obj)
-console.log(newObj)
+
+const num = 5
+num++
+
+
+

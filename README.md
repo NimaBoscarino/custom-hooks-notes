@@ -6,16 +6,7 @@
 
 [Here's yet another lecture recording.](https://www.youtube.com/watch?v=wFYMjnnbVoo)
 
-[Today's notes are available on Github.](https://github.com/NimaBoscarino/custom-hooks-notes) The notes we wrote in class are in the `oct-30.md` file.
-
-Our actual code can be found in the files:
-
-- disgusting.md
-- breathtaking.md
-- arrays.md
-- objects.md
-- App.js
-- App copy.js
+[Today's notes are available on Github.](https://github.com/NimaBoscarino/custom-hooks-notes). Check out the 'old' folder for some more stuff.
 
 These are some more demos:
 
